@@ -17,5 +17,13 @@ urlpatterns = [path("", views.index, name="index"),
         'menu/<int:pk>',
         views.SingleMenuItemView.as_view()
     ),
+    path(
+        'menu-items/', views.MenuItemsView.as_view()
+    ),
+   path(
+        'menu-items/<int:pk>', views.SingleMenuItemView.as_view()
+        ),
+    path('message/', views.msg),
 ]
+
 
