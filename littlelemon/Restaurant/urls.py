@@ -18,3 +18,4 @@ urlpatterns = [path("", views.index, name="index"),
         views.SingleMenuItemView.as_view()
     ),
 ]
+
